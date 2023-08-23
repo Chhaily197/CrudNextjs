@@ -6,9 +6,14 @@ export default function Navbar() {
                <Link
                 className='text-white font-bold py-1'
                 href={`/`}>CHLCoding</Link>
-               <Link
-                className='text-white font-bold py-1'
-                href={`/addTopic`}>Add Topic</Link>
+                <div className='flex gap-3'>
+                    <Link href="/login"
+                    className='text-white font-bold py-1'
+                    >Log out</Link>
+                    <Link
+                    className='text-white font-bold py-1'
+                    href={`/addTopic`}>Add Topic</Link>
+                </div>
           </nav>
      )
 }
